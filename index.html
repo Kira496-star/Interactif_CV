@@ -19,20 +19,20 @@
 
       <!-- Desktop Nav -->
       <nav class="hidden md:flex items-center space-x-6 text-sm font-medium text-slate-300">
-        <a href="#about" class="hover:text-cyan-400 transition-colors nav-about">About</a>
-        <a href="#experience" class="hover:text-cyan-400 transition-colors nav-exp">Experience</a>
-        <a href="#education" class="hover:text-cyan-400 transition-colors nav-edu">Education</a>
-        <a href="#skills" class="hover:text-cyan-400 transition-colors nav-skills">Skills</a>
-        <a href="#projects" class="hover:text-cyan-400 transition-colors nav-proj">Projects</a>
+        <a href="#about" class="hover:text-cyan-400 transition-colors" data-i18n="nav-about">About</a>
+        <a href="#experience" class="hover:text-cyan-400 transition-colors" data-i18n="nav-exp">Experience</a>
+        <a href="#education" class="hover:text-cyan-400 transition-colors" data-i18n="nav-edu">Education</a>
+        <a href="#skills" class="hover:text-cyan-400 transition-colors" data-i18n="nav-skills">Skills</a>
+        <a href="#projects" class="hover:text-cyan-400 transition-colors" data-i18n="nav-proj">Projects</a>
         
         <!-- Language Switcher -->
         <div class="flex items-center space-x-2 pl-4 border-l border-white/10">
-          <button onclick="setLanguage('de')" class="px-2 py-1 text-xs rounded bg-slate-800 hover:bg-cyan-500 hover:text-slate-950 transition-colors">DE</button>
-          <button onclick="setLanguage('en')" class="px-2 py-1 text-xs rounded bg-slate-800 hover:bg-cyan-500 hover:text-slate-950 transition-colors">EN</button>
-          <button onclick="setLanguage('fr')" class="px-2 py-1 text-xs rounded bg-slate-800 hover:bg-cyan-500 hover:text-slate-950 transition-colors">FR</button>
+          <button onclick="setLanguage('de')" class="px-2 py-1 text-xs rounded bg-slate-800 hover:bg-cyan-500 hover:text-slate-950 transition-colors text-white">DE</button>
+          <button onclick="setLanguage('en')" class="px-2 py-1 text-xs rounded bg-slate-800 hover:bg-cyan-500 hover:text-slate-950 transition-colors text-white">EN</button>
+          <button onclick="setLanguage('fr')" class="px-2 py-1 text-xs rounded bg-slate-800 hover:bg-cyan-500 hover:text-slate-950 transition-colors text-white">FR</button>
         </div>
 
-        <a href="#contact" class="px-4 py-2 rounded-full bg-cyan-500 text-slate-950 font-semibold hover:bg-cyan-400 transition-all shadow-lg shadow-cyan-500/20 nav-contact">Let's Connect</a>
+        <a href="#contact" class="px-4 py-2 rounded-full bg-cyan-500 text-slate-950 font-semibold hover:bg-cyan-400 transition-all shadow-lg shadow-cyan-500/20" data-i18n="nav-contact">Let's Connect</a>
       </nav>
 
       <!-- Mobile Menu Button -->
@@ -43,17 +43,17 @@
 
     <!-- Mobile Dropdown -->
     <div id="mobile-menu" class="hidden md:hidden glass-panel border-b border-white/10 px-6 py-4 space-y-3">
-      <a href="#about" class="block text-slate-300 hover:text-cyan-400 nav-about">About</a>
-      <a href="#experience" class="block text-slate-300 hover:text-cyan-400 nav-exp">Experience</a>
-      <a href="#education" class="block text-slate-300 hover:text-cyan-400 nav-edu">Education</a>
-      <a href="#skills" class="block text-slate-300 hover:text-cyan-400 nav-skills">Skills</a>
-      <a href="#projects" class="block text-slate-300 hover:text-cyan-400 nav-proj">Projects</a>
+      <a href="#about" class="block text-slate-300 hover:text-cyan-400" data-i18n="nav-about">About</a>
+      <a href="#experience" class="block text-slate-300 hover:text-cyan-400" data-i18n="nav-exp">Experience</a>
+      <a href="#education" class="block text-slate-300 hover:text-cyan-400" data-i18n="nav-edu">Education</a>
+      <a href="#skills" class="block text-slate-300 hover:text-cyan-400" data-i18n="nav-skills">Skills</a>
+      <a href="#projects" class="block text-slate-300 hover:text-cyan-400" data-i18n="nav-proj">Projects</a>
       <div class="flex space-x-2 py-2">
         <button onclick="setLanguage('de')" class="px-3 py-1 text-xs rounded bg-slate-800 text-white">DE</button>
         <button onclick="setLanguage('en')" class="px-3 py-1 text-xs rounded bg-slate-800 text-white">EN</button>
         <button onclick="setLanguage('fr')" class="px-3 py-1 text-xs rounded bg-slate-800 text-white">FR</button>
       </div>
-      <a href="#contact" class="block text-cyan-400 font-semibold nav-contact">Contact</a>
+      <a href="#contact" class="block text-cyan-400 font-semibold" data-i18n="nav-contact">Contact</a>
     </div>
   </header>
 
@@ -197,6 +197,34 @@
           </div>
         </div>
 
+        <div class="relative pl-12">
+          <div class="absolute left-2.5 top-1.5 w-3 h-3 rounded-full bg-amber-400 ring-4 ring-amber-950"></div>
+          <div class="glass-card p-6 rounded-2xl border border-white/10 space-y-2">
+            <div class="flex flex-wrap items-center justify-between gap-2">
+              <h3 class="text-lg font-bold text-white">Werkstudentin – Buchhaltung & Finanzen</h3>
+              <span class="text-xs px-3 py-1 rounded-full bg-amber-950 text-amber-400 border border-amber-800">06/2021 – 2022</span>
+            </div>
+            <h4 class="text-sm font-medium text-amber-400">abcdruck GmbH, Heidelberg</h4>
+            <p class="text-sm text-slate-300 font-light" data-i18n="exp-abcdruck">
+              Prüfung und Kontierung von Geschäftsvorfällen; Debitorenstammpflege und Erstellung von Ausgangsrechnungen.
+            </p>
+          </div>
+        </div>
+
+        <div class="relative pl-12">
+          <div class="absolute left-2.5 top-1.5 w-3 h-3 rounded-full bg-rose-400 ring-4 ring-rose-950"></div>
+          <div class="glass-card p-6 rounded-2xl border border-white/10 space-y-2">
+            <div class="flex flex-wrap items-center justify-between gap-2">
+              <h3 class="text-lg font-bold text-white">Praktikantin – Buchhaltung & Interne Revision</h3>
+              <span class="text-xs px-3 py-1 rounded-full bg-rose-950 text-rose-400 border border-rose-800">2016 – 2017</span>
+            </div>
+            <h4 class="text-sm font-medium text-rose-400">FINAM TOGO S.A, Lomé, Togo</h4>
+            <p class="text-sm text-slate-300 font-light" data-i18n="exp-finam">
+              Praktikum als Comptable und als Contrôleur mit Aufgaben in der Buchhaltung und internen Kontrolle.
+            </p>
+          </div>
+        </div>
+
       </div>
     </section>
 
@@ -223,10 +251,24 @@
           </div>
         </div>
 
+        <div class="relative pl-12">
+          <div class="absolute left-2.5 top-1.5 w-3 h-3 rounded-full bg-indigo-400 ring-4 ring-indigo-950"></div>
+          <div class="glass-card p-6 rounded-2xl border border-white/10 space-y-2">
+            <div class="flex flex-wrap items-center justify-between gap-2">
+              <h3 class="text-lg font-bold text-white">Baccalauréat (Abitur) – Serie G2</h3>
+              <span class="text-xs px-3 py-1 rounded-full bg-indigo-950 text-indigo-400 border border-indigo-800">06/2015</span>
+            </div>
+            <h4 class="text-sm font-medium text-indigo-400">Lycée Technique, Lomé (Togo)</h4>
+            <p class="text-sm text-slate-300 font-light" data-i18n="edu-lycee">
+              Quantitative Techniken BWL.
+            </p>
+          </div>
+        </div>
+
       </div>
     </section>
 
-    <!-- SKILLS -->
+    <!-- SKILLS SECTION -->
     <section id="skills" class="py-24 px-6 max-w-6xl mx-auto">
       <div class="text-center mb-12">
         <h2 class="text-3xl md:text-4xl font-bold tracking-tight" data-i18n="skills-heading">Kenntnisse & Fähigkeiten</h2>
@@ -254,30 +296,106 @@
           <h3 class="font-semibold">Java Web</h3>
           <p class="text-xs text-slate-400">Servlets, JSP, JDBC</p>
         </div>
+        <div class="glass-card p-6 rounded-2xl text-center space-y-3 border border-white/10">
+          <i data-lucide="cloud" class="w-8 h-8 text-sky-400 mx-auto"></i>
+          <h3 class="font-semibold">Azure & Entra ID</h3>
+          <p class="text-xs text-slate-400">Automatisierung</p>
+        </div>
+        <div class="glass-card p-6 rounded-2xl text-center space-y-3 border border-white/10">
+          <i data-lucide="file-code" class="w-8 h-8 text-emerald-400 mx-auto"></i>
+          <h3 class="font-semibold">HTML, CSS, JS</h3>
+          <p class="text-xs text-slate-400">Frontend Entwicklung</p>
+        </div>
+        <div class="glass-card p-6 rounded-2xl text-center space-y-3 border border-white/10">
+          <i data-lucide="layers" class="w-8 h-8 text-rose-400 mx-auto"></i>
+          <h3 class="font-semibold">XML / XPath / MFL</h3>
+          <p class="text-xs text-slate-400">EDI & Datentransformation</p>
+        </div>
+        <div class="glass-card p-6 rounded-2xl text-center space-y-3 border border-white/10">
+          <i data-lucide="cpu" class="w-8 h-8 text-indigo-300 mx-auto"></i>
+          <h3 class="font-semibold">ServiceNow & Confluence</h3>
+          <p class="text-xs text-slate-400">Enterprise Tools & Dokumentation</p>
+        </div>
+        <div class="glass-card p-6 rounded-2xl text-center space-y-3 border border-white/10">
+          <i data-lucide="globe-2" class="w-8 h-8 text-emerald-400 mx-auto"></i>
+          <h3 class="font-semibold" data-i18n="lang-fr">Französisch</h3>
+          <p class="text-xs text-slate-400" data-i18n="lang-fr-sub">Muttersprache</p>
+        </div>
+        <div class="glass-card p-6 rounded-2xl text-center space-y-3 border border-white/10">
+          <i data-lucide="award" class="w-8 h-8 text-rose-400 mx-auto"></i>
+          <h3 class="font-semibold">Deutsch (DSH-3)</h3>
+          <p class="text-xs text-slate-400" data-i18n="lang-de-sub">Sehr gut in Wort und Schrift</p>
+        </div>
+        <div class="glass-card p-6 rounded-2xl text-center space-y-3 border border-white/10">
+          <i data-lucide="message-square" class="w-8 h-8 text-indigo-300 mx-auto"></i>
+          <h3 class="font-semibold">Englisch (C1)</h3>
+          <p class="text-xs text-slate-400" data-i18n="lang-en-sub">Sprachzertifikat Univ. Mannheim</p>
+        </div>
+        <div class="glass-card p-6 rounded-2xl text-center space-y-3 border border-white/10">
+          <i data-lucide="briefcase" class="w-8 h-8 text-cyan-300 mx-auto"></i>
+          <h3 class="font-semibold">IT-Consulting</h3>
+          <p class="text-xs text-slate-400" data-i18n="skill-consulting">Anforderungsanalyse & Testing</p>
+        </div>
       </div>
     </section>
 
-    <!-- PROJECTS -->
+    <!-- PROJECTS SECTION -->
     <section id="projects" class="py-24 px-6 max-w-6xl mx-auto">
       <div class="text-center mb-16">
         <h2 class="text-3xl md:text-4xl font-bold tracking-tight" data-i18n="proj-heading">Projekte</h2>
-        <p class="text-slate-400 mt-2" data-i18n="proj-sub">Ausgewählte Referenzprojekte</p>
+        <p class="text-slate-400 mt-2" data-i18n="proj-sub">Akademische & Persönliche Projekte</p>
       </div>
 
-      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div class="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
+        
+        <!-- Project 1 -->
         <div class="glass-card p-8 rounded-2xl border border-white/10 flex flex-col justify-between space-y-6">
           <div class="space-y-4">
             <span class="px-3 py-1 text-xs rounded-full bg-cyan-950 text-cyan-400 border border-cyan-800">Bachelorthesis (1,3)</span>
             <h3 class="text-xl font-bold text-white">KICAGEM IoT Analytics Service</h3>
             <p class="text-slate-300 text-sm font-light leading-relaxed" data-i18n="proj-iot">
-              Konzeption und Entwicklung eines FastAPI-Webservice zur Analyse von IoT-Telemetriedaten aus PostgreSQL mit OData-Schnittstelle und Docker.
+              Konzeption und Entwicklung eines FastAPI-Webservice zur Analyse von IoT-Telemetriedaten aus PostgreSQL mit OData-Schnittstelle, SQL-Injection-Schutz und Docker.
             </p>
           </div>
         </div>
+
+        <!-- Project 2 -->
+        <div class="glass-card p-8 rounded-2xl border border-white/10 flex flex-col justify-between space-y-6">
+          <div class="space-y-4">
+            <span class="px-3 py-1 text-xs rounded-full bg-indigo-950 text-indigo-400 border border-indigo-800">Praktikum (2,0)</span>
+            <h3 class="text-xl font-bold text-white">BWI520 Bibliothek</h3>
+            <p class="text-slate-300 text-sm font-light leading-relaxed" data-i18n="proj-lib">
+              Eigenständige Konzeption und Implementierung einer Webanwendung zur Bibliotheksverwaltung nach MVC-Architektur (Java/Jakarta Servlets, JSP, JDBC, PostgreSQL).
+            </p>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="glass-card p-8 rounded-2xl border border-white/10 flex flex-col justify-between space-y-6">
+          <div class="space-y-4">
+            <span class="px-3 py-1 text-xs rounded-full bg-amber-950 text-amber-400 border border-amber-800">Seminararbeit</span>
+            <h3 class="text-xl font-bold text-white">MQTT (Message Queue Telemetry Transport)</h3>
+            <p class="text-slate-300 text-sm font-light leading-relaxed" data-i18n="proj-mqtt">
+              Wissenschaftliche Auseinandersetzung mit dem MQTT-Protokoll für IoT- und M2M-Kommunikation: Publish/Subscribe-Architektur, QoS-Stufen, TLS-Sicherheit und Einsatzszenarien.
+            </p>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="glass-card p-8 rounded-2xl border border-white/10 flex flex-col justify-between space-y-6">
+          <div class="space-y-4">
+            <span class="px-3 py-1 text-xs rounded-full bg-purple-950 text-purple-400 border border-purple-800">Ehrenamtlich</span>
+            <h3 class="text-xl font-bold text-white">NYONYO Website</h3>
+            <p class="text-slate-300 text-sm font-light leading-relaxed" data-i18n="proj-nyonyo">
+              Mehrsprachige Website für eine Kirchengemeinde (nyonyoprayer.com) mit HTML5, CSS3, JavaScript, Google Calendar API und Netlify-Deployment.
+            </p>
+          </div>
+        </div>
+
       </div>
     </section>
 
-    <!-- CONTACT -->
+    <!-- CONTACT SECTION -->
     <section id="contact" class="py-24 px-6 max-w-3xl mx-auto">
       <div class="glass-panel p-8 md:p-12 rounded-3xl border border-white/10 shadow-2xl relative space-y-8">
         <div class="text-center space-y-2">
@@ -304,19 +422,35 @@
 
     const translations = {
       de: {
-        "nav-about": "Über mich", "nav-exp": "Erfahrung", "nav-edu": "Ausbildung", "nav-skills": "Kenntnisse", "nav-proj": "Projekte", "nav-contact": "Kontakt",
+        "nav-about": "Über mich", "nav-exp": "Berufserfahrung", "nav-edu": "Ausbildung", "nav-skills": "Kenntnisse", "nav-proj": "Projekte", "nav-contact": "Kontakt",
         "hero-badge": "Verfügbar für IT-Beratung & Softwareentwicklung",
         "hero-title-1": "Brücken schlagen zwischen", "hero-title-2": "Unternehmensstrategie", "hero-title-3": "und technischer Umsetzung",
         "hero-desc": "Wirtschaftsinformatikerin (B.Sc., Abschlussnote 2,3) & Technology Strategy & Transformation Consultant bei Deloitte.",
         "btn-projects": "Projekte ansehen", "btn-contact": "Kontakt aufnehmen",
         "about-title": "Über mich", "about-subtitle": "Professionelles Profil und Kernkompetenzen",
-        "profile-title": "Profilzusammenfassung", "profile-text-1": "Wirtschaftsinformatikerin (B.Sc., Abschlussnote 2,3) mit technischer Tiefe und praktischer Beratungserfahrung. In meiner mit 1,3 bewerteten Bachelorthesis habe ich einen FastAPI-basierten IoT-Analytics-Service konzipiert und entwickelt.", "profile-text-2": "Kommunikationsstärke, strukturierte Arbeitsweise und Sprachkenntnisse in Deutsch (DSH-3), Englisch (C1) und Französisch (Muttersprache).",
+        "profile-title": "Profilzusammenfassung", 
+        "profile-text-1": "Wirtschaftsinformatikerin (B.Sc., Abschlussnote 2,3) mit technischer Tiefe und praktischer Beratungserfahrung. In meiner mit 1,3 bewerteten Bachelorthesis habe ich einen FastAPI-basierten IoT-Analytics-Service konzipiert und entwickelt.", 
+        "profile-text-2": "Kommunikationsstärke, eine strukturierte Arbeitsweise und sehr gute Sprachkenntnisse in Deutsch (DSH-3), Englisch (C1) und Französisch (Muttersprache) runden mein Profil ab.",
         "lang-title": "Sprachen", "stack-title": "Tech Stack",
         "exp-heading": "Berufserfahrung", "exp-sub": "Praktische Stationen und Beratungserfahrung",
+        "exp-deloitte": "Analyse von Schnittstellen und Integrationen im ServiceNow-Umfeld; Entwicklung einer API in Python zur Steuerung von Scan- und Automatisierungsprozessen; Aufbereitung Excel-basierter Datenquellen; Unterstützung bei Präsentationen und Lösungskonzepten.",
+        "exp-crif": "Erstellung von Erfassungsbögen und Risikoanalysen; Datenauswertung mit SQL; Docusnap-Reporting; Automatisierungsskript zur Verknüpfung von Docusnap mit Azure.",
+        "exp-haas": "Unterstützung im Rollout-Projekt „Einführung Office 365“; Erstellung von Dokumentationen; Teilnahme an Meetings mit Fachbereichen.",
+        "exp-siemens": "Einarbeitung in EDI und AX4; Erstellung von EDI-Workflows in XML unter Einsatz von MFL, XQuery und XPath; Mitwirkung am Projekt „Open Notification“.",
+        "exp-abcdruck": "Prüfung und Kontierung von Geschäftsvorfällen; Debitorenstammpflege und Erstellung von Ausgangsrechnungen.",
+        "exp-finam": "Praktikum als Comptable und als Contrôleur mit Aufgaben in der Buchhaltung und internen Kontrolle.",
         "edu-heading": "Ausbildung", "edu-sub": "Akademischer Werdegang",
+        "edu-hwglu": "Abschlussnote: 2,3 | Bachelorthesis: 1,3 (sehr gut). Schwerpunkte: Web-Anwendungen, Software Engineering, ERP- und SCM-Systeme, Wahlpflichtmodul Unternehmensberatung (Note 1,7).",
+        "edu-lycee": "Quantitative Techniken BWL.",
         "skills-heading": "Kenntnisse & Fähigkeiten", "skills-sub": "Technische Expertise und Sprachen",
-        "proj-heading": "Projekte", "proj-sub": "Ausgewählte Referenzprojekte",
-        "contact-heading": "Kontakt", "contact-sub": "Haben Sie eine Anfrage oder ein Projekt?", "btn-send": "Nachricht senden"
+        "skill-consulting": "Anforderungsanalyse & Testing",
+        "lang-fr": "Französisch", "lang-fr-sub": "Muttersprache", "lang-de-sub": "Sehr gut in Wort und Schrift", "lang-en-sub": "Sprachzertifikat Univ. Mannheim",
+        "proj-heading": "Projekte", "proj-sub": "Akademische & Persönliche Projekte",
+        "proj-iot": "Konzeption und Entwicklung eines FastAPI-Webservice zur Analyse von IoT-Telemetriedaten aus PostgreSQL mit OData-Schnittstelle, SQL-Injection-Schutz und Docker.",
+        "proj-lib": "Eigenständige Konzeption und Implementierung einer Webanwendung zur Bibliotheksverwaltung nach MVC-Architektur (Java/Jakarta Servlets, JSP, JDBC, PostgreSQL).",
+        "proj-mqtt": "Wissenschaftliche Auseinandersetzung mit dem MQTT-Protokoll für IoT- und M2M-Kommunikation: Publish/Subscribe-Architektur, QoS-Stufen, TLS-Sicherheit und Einsatzszenarien.",
+        "proj-nyonyo": "Mehrsprachige Website für eine Kirchengemeinde (nyonyoprayer.com) mit HTML5, CSS3, JavaScript, Google Calendar API und Netlify-Deployment.",
+        "contact-heading": "Kontakt", "contact-sub": "Haben Sie eine Anfrage oder ein Projekt im Sinn?", "btn-send": "Nachricht senden"
       },
       en: {
         "nav-about": "About", "nav-exp": "Experience", "nav-edu": "Education", "nav-skills": "Skills", "nav-proj": "Projects", "nav-contact": "Let's Connect",
@@ -325,12 +459,28 @@
         "hero-desc": "Wirtschaftsinformatikerin (B.Sc., GPA 2.3) & Technology Strategy & Transformation Consultant at Deloitte.",
         "btn-projects": "Explore Projects", "btn-contact": "Get in Touch",
         "about-title": "About Me", "about-subtitle": "Professional profile and core competencies",
-        "profile-title": "Profile Summary", "profile-text-1": "Business Information Systems graduate (B.Sc., GPA 2.3) with technical depth and consulting expertise. Developed an IoT analytics service in my 1.3-rated Bachelor thesis.", "profile-text-2": "Strong communication, structured approach, and fluency in German (DSH-3), English (C1), and French (Native).",
+        "profile-title": "Profile Summary", 
+        "profile-text-1": "Business Information Systems graduate (B.Sc., GPA 2.3) with technical depth and consulting expertise. Developed an IoT analytics service in my 1.3-rated Bachelor thesis.", 
+        "profile-text-2": "Strong communication, structured approach, and fluency in German (DSH-3), English (C1), and French (Native).",
         "lang-title": "Languages", "stack-title": "Tech Stack",
         "exp-heading": "Experience", "exp-sub": "Practical stations and consulting experience",
+        "exp-deloitte": "Analysis of ServiceNow integrations; Python API development for automation; Excel data structuring for imports; support for presentations and solution concepts.",
+        "exp-crif": "Risk analysis and SQL data evaluations; Docusnap reporting; automation script linking Docusnap with Azure.",
+        "exp-haas": "Supported company-wide Office 365 rollout project, documentation creation, and department coordination.",
+        "exp-siemens": "EDI workflows in XML using MFL, XQuery, and XPath; contribution to the Open Notification project.",
+        "exp-abcdruck": "Financial accounting tasks, invoice processing, and accounts receivable management.",
+        "exp-finam": "Internship in accounting and internal auditing/revision.",
         "edu-heading": "Education", "edu-sub": "Academic background",
+        "edu-hwglu": "GPA: 2.3 | Bachelor Thesis: 1.3 (Very Good). Focus on Web Applications, Software Engineering, ERP/SCM systems.",
+        "edu-lycee": "Quantitative Techniques in Business Administration.",
         "skills-heading": "Skills & Expertise", "skills-sub": "Technical stack and languages",
-        "proj-heading": "Projects", "proj-sub": "Selected reference projects",
+        "skill-consulting": "Requirements Analysis & Testing",
+        "lang-fr": "French", "lang-fr-sub": "Native Language", "lang-de-sub": "Professional Proficiency", "lang-en-sub": "Advanced Business Fluency",
+        "proj-heading": "Projects", "proj-sub": "Academic & Personal Projects",
+        "proj-iot": "Design and development of a FastAPI web service analyzing IoT telemetry data from PostgreSQL with OData, SQL injection protection, and Docker.",
+        "proj-lib": "Design and implementation of a library management web application following MVC architecture (Java, Servlets, JSP, JDBC, PostgreSQL).",
+        "proj-mqtt": "Scientific analysis of the MQTT protocol for IoT and M2M communication: Publish/Subscribe architecture, QoS levels, and security aspects.",
+        "proj-nyonyo": "Multilingual community website (nyonyoprayer.com) featuring HTML5, CSS3, JavaScript, Google Calendar API, and Netlify deployment.",
         "contact-heading": "Let's Connect", "contact-sub": "Have an opportunity or project in mind? Reach out below.", "btn-send": "Send Message"
       },
       fr: {
@@ -340,12 +490,28 @@
         "hero-desc": "Diplômée en informatique de gestion (B.Sc., note 2.3) et consultante en stratégie technologique chez Deloitte.",
         "btn-projects": "Voir les projets", "btn-contact": "Contactez-moi",
         "about-title": "À propos de moi", "about-subtitle": "Profil professionnel et compétences",
-        "profile-title": "Résumé du profil", "profile-text-1": "Diplômée en Wirtschaftsinformatikerin (B.Sc.) avec une forte expertise technique et de conseil. Thèse de Bachelor notée 1.3 sur un service d'analyse IoT sous FastAPI.", "profile-text-2": "Aptitude à la communication, méthode rigoureuse, maîtrise de l'allemand (DSH-3), de l'anglais (C1) et du français (langue maternelle).",
+        "profile-title": "Résumé du profil", 
+        "profile-text-1": "Diplômée en Wirtschaftsinformatikerin (B.Sc.) avec une forte expertise technique et de conseil. Thèse de Bachelor notée 1.3 sur un service d'analyse IoT sous FastAPI.", 
+        "profile-text-2": "Aptitude à la communication, méthode rigoureuse, maîtrise de l'allemand (DSH-3), de l'anglais (C1) et du français (langue maternelle).",
         "lang-title": "Langues", "stack-title": "Stack Technique",
         "exp-heading": "Expérience professionnelle", "exp-sub": "Parcours professionnel et conseil",
+        "exp-deloitte": "Analyse d'intégrations ServiceNow ; développement d'API en Python ; structuration de données Excel pour importation ; support aux concepts de solutions.",
+        "exp-crif": "Analyses de risques et évaluations SQL ; rapports Docusnap ; script d'automatisation reliant Docusnap à Azure.",
+        "exp-haas": "Support au projet de déploiement Office 365, création de documentation et coordination de départements.",
+        "exp-siemens": "Flux EDI en XML utilisant MFL, XQuery et XPath ; contribution au projet Open Notification.",
+        "exp-abcdruck": "Comptabilité générale, traitement des factures et gestion des comptes clients.",
+        "exp-finam": "Stage en comptabilité et contrôle interne/révision.",
         "edu-heading": "Formation", "edu-sub": "Parcours académique",
+        "edu-hwglu": "Note : 2.3 | Thèse : 1.3 (très bien). Spécialisations : applications web, génie logiciel, systèmes ERP et SCM.",
+        "edu-lycee": "Techniques quantitatives de gestion.",
         "skills-heading": "Compétences & Expertise", "skills-sub": "Stack technique et langues",
-        "proj-heading": "Projets", "proj-sub": "Projets de référence sélectionnés",
+        "skill-consulting": "Analyse des besoins & Tests",
+        "lang-fr": "Français", "lang-fr-sub": "Langue maternelle", "lang-de-sub": "Maîtrise professionnelle", "lang-en-sub": "Courant professionnel avancé",
+        "proj-heading": "Projets", "proj-sub": "Projets académiques et personnels",
+        "proj-iot": "Conception et développement d'un service web FastAPI analysant des données télémétriques IoT depuis PostgreSQL avec OData, protection contre les injections SQL et Docker.",
+        "proj-lib": "Conception et implémentation d'une application web de gestion de bibliothèque selon l'architecture MVC (Java, Servlets, JSP, JDBC, PostgreSQL).",
+        "proj-mqtt": "Analyse scientifique du protocole MQTT pour la communication IoT et M2M : architecture Publish/Subscribe, niveaux QoS, sécurité TLS.",
+        "proj-nyonyo": "Site web communautaire multilingue (nyonyoprayer.com) avec HTML5, CSS3, JavaScript, API Google Calendar et déploiement Netlify.",
         "contact-heading": "Contactez-moi", "contact-sub": "Vous avez un projet ou une opportunité ?", "btn-send": "Envoyer le message"
       }
     };
