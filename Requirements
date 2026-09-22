@@ -1,0 +1,16 @@
+Functional & Non-Functional Requirements Specification
+
+1. Functional Requirements
+
+Seamless Navigation: A fixed top navigation bar utilizing smooth scrolling anchors for instant transitions between core sections (About, Experience, Skills, Projects, Contact).
+Dynamic Skills Filtering: Interactive filter buttons allowing users to sort technical proficiencies by category (Backend & API, Cloud & DevOps, Languages) without page reloads.
+Interactive Project Modals: Clickable project cards that open a detailed modal popup displaying architectural deep dives (e.g., the IoT telemetry service and Java portal tech stacks).
+Functional Contact Form: A user input form featuring validation states, dynamic loading feedback, and a success confirmation state.
+Direct Professional Integration: Quick-access links connecting visitors directly to your official LinkedIn and GitHub profiles for immediate verification by recruiters and consulting managers.
+
+2. Non-Functional Requirements
+
+Ultra-Modern UI & Glassmorphism Design: A polished dark-mode aesthetic utilizing frosted glass transparency (backdrop-filter) and subtle glow accents to project a high-end, contemporary standard.
+Responsive Mobile-First Architecture: Fluid layout scaling across smartphones, tablets, and desktop viewports, complete with a collapsible mobile hamburger menu.
+Performance & Lightweight Footprint: Zero heavy build-step overhead by utilizing utility-first CSS via CDN and lightweight vector icons, ensuring instant load times.
+Accessibility & High Scannability: Strict visual hierarchy and optimal text contrast designed for fast-paced recruiters who evaluate portfolios in under five seconds.
