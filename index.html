@@ -70,7 +70,7 @@
           <span data-i18n="hero-badge">Available for IT Consulting & Software Engineering</span>
         </div>
 
-        <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight whitespace-nowrap">
+       <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight md:whitespace-nowrap">
           <span data-i18n="hero-title-1">Bridging</span> <span class="bg-gradient-to-r from-cyan-400 via-indigo-400 to-purple-400 bg-clip-text text-transparent" data-i18n="hero-title-2">Business Strategy</span> <span data-i18n="hero-title-3">& Tech Execution</span>
         </h1>
 
@@ -555,6 +555,23 @@
         "contact-heading": "Contactez-moi", "contact-sub": "Vous avez un projet ou une opportunité ?", "btn-send": "Envoyer le message"
       }
     };
+
+    // Mobile Menu Toggle Funktion
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    if (mobileMenuBtn && mobileMenu) {
+      mobileMenuBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+      });
+
+      // Menü automatisch schließen, wenn man auf einen Menüpunkt klickt
+      mobileMenu.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+          mobileMenu.classList.add('hidden');
+        });
+      });
+    }
 
     function setLanguage(lang) {
       document.querySelectorAll("[data-i18n]").forEach(el => {
