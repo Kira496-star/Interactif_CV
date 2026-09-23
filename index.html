@@ -270,72 +270,97 @@
 
     <!-- SKILLS SECTION -->
     <section id="skills" class="py-24 px-6 max-w-6xl mx-auto">
-      <div class="text-center mb-12">
+      <div class="text-center mb-16">
         <h2 class="text-3xl md:text-4xl font-bold tracking-tight" data-i18n="skills-heading">Kenntnisse & Fähigkeiten</h2>
         <p class="text-slate-400 mt-2" data-i18n="skills-sub">Technische Expertise und Sprachen</p>
       </div>
 
-      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
-        <div class="glass-card p-6 rounded-2xl text-center space-y-3 border border-white/10">
-          <i data-lucide="code" class="w-8 h-8 text-cyan-400 mx-auto"></i>
-          <h3 class="font-semibold">Python (FastAPI)</h3>
-          <p class="text-xs text-slate-400">API-Entwicklung & OData</p>
+      <div class="space-y-12">
+        
+        <!-- Kategorie 1: Backend & Datenbanken -->
+        <div>
+          <h3 class="text-xl font-semibold text-cyan-400 mb-6 flex items-center gap-2">
+            <i data-lucide="code" class="w-5 h-5"></i> <span data-i18n="cat-backend">Backend, APIs & Datenbanken</span>
+          </h3>
+          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+            <div class="glass-card p-6 rounded-2xl text-center space-y-2 border border-white/10">
+              <h4 class="font-semibold">Python (FastAPI)</h4>
+              <p class="text-xs text-slate-400">API-Entwicklung & OData</p>
+            </div>
+            <div class="glass-card p-6 rounded-2xl text-center space-y-2 border border-white/10">
+              <h4 class="font-semibold">SQL & PostgreSQL</h4>
+              <p class="text-xs text-slate-400">Datenauswertung</p>
+            </div>
+            <div class="glass-card p-6 rounded-2xl text-center space-y-2 border border-white/10">
+              <h4 class="font-semibold">Java Web</h4>
+              <p class="text-xs text-slate-400">Servlets, JSP, JDBC</p>
+            </div>
+            <div class="glass-card p-6 rounded-2xl text-center space-y-2 border border-white/10">
+              <h4 class="font-semibold">HTML, CSS, JS</h4>
+              <p class="text-xs text-slate-400">Frontend Entwicklung</p>
+            </div>
+          </div>
         </div>
-        <div class="glass-card p-6 rounded-2xl text-center space-y-3 border border-white/10">
-          <i data-lucide="database" class="w-8 h-8 text-indigo-400 mx-auto"></i>
-          <h3 class="font-semibold">SQL & PostgreSQL</h3>
-          <p class="text-xs text-slate-400">Datenauswertung</p>
+
+        <!-- Kategorie 2: Cloud, DevOps & Integrationen -->
+        <div>
+          <h3 class="text-xl font-semibold text-indigo-400 mb-6 flex items-center gap-2">
+            <i data-lucide="cloud" class="w-5 h-5"></i> <span data-i18n="cat-devops">Cloud, DevOps & Integrationen</span>
+          </h3>
+          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+            <div class="glass-card p-6 rounded-2xl text-center space-y-2 border border-white/10">
+              <h4 class="font-semibold">Docker / Compose</h4>
+              <p class="text-xs text-slate-400">Containerisierung</p>
+            </div>
+            <div class="glass-card p-6 rounded-2xl text-center space-y-2 border border-white/10">
+              <h4 class="font-semibold">Azure & Entra ID</h4>
+              <p class="text-xs text-slate-400">Automatisierung</p>
+            </div>
+            <div class="glass-card p-6 rounded-2xl text-center space-y-2 border border-white/10">
+              <h4 class="font-semibold">XML / XPath / MFL</h4>
+              <p class="text-xs text-slate-400">EDI & Datentransformation</p>
+            </div>
+          </div>
         </div>
-        <div class="glass-card p-6 rounded-2xl text-center space-y-3 border border-white/10">
-          <i data-lucide="box" class="w-8 h-8 text-purple-400 mx-auto"></i>
-          <h3 class="font-semibold">Docker / Compose</h3>
-          <p class="text-xs text-slate-400">Containerisierung</p>
+
+        <!-- Kategorie 3: Enterprise Tools & Consulting -->
+        <div>
+          <h3 class="text-xl font-semibold text-purple-400 mb-6 flex items-center gap-2">
+            <i data-lucide="briefcase" class="w-5 h-5"></i> <span data-i18n="cat-tools">Enterprise Tools & Consulting</span>
+          </h3>
+          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-6">
+            <div class="glass-card p-6 rounded-2xl text-center space-y-2 border border-white/10">
+              <h4 class="font-semibold">ServiceNow & Confluence</h4>
+              <p class="text-xs text-slate-400">Enterprise Tools & Dokumentation</p>
+            </div>
+            <div class="glass-card p-6 rounded-2xl text-center space-y-2 border border-white/10">
+              <h4 class="font-semibold">IT-Consulting</h4>
+              <p class="text-xs text-slate-400" data-i18n="skill-consulting">Anforderungsanalyse & Testing</p>
+            </div>
+          </div>
         </div>
-        <div class="glass-card p-6 rounded-2xl text-center space-y-3 border border-white/10">
-          <i data-lucide="coffee" class="w-8 h-8 text-amber-400 mx-auto"></i>
-          <h3 class="font-semibold">Java Web</h3>
-          <p class="text-xs text-slate-400">Servlets, JSP, JDBC</p>
+
+        <!-- Kategorie 4: Sprachen -->
+        <div>
+          <h3 class="text-xl font-semibold text-emerald-400 mb-6 flex items-center gap-2">
+            <i data-lucide="globe-2" class="w-5 h-5"></i> <span data-i18n="cat-langs">Sprachen</span>
+          </h3>
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+            <div class="glass-card p-6 rounded-2xl text-center space-y-2 border border-white/10">
+              <h4 class="font-semibold" data-i18n="lang-fr">Französisch</h4>
+              <p class="text-xs text-slate-400" data-i18n="lang-fr-sub">Muttersprache</p>
+            </div>
+            <div class="glass-card p-6 rounded-2xl text-center space-y-2 border border-white/10">
+              <h4 class="font-semibold">Deutsch (DSH-3)</h4>
+              <p class="text-xs text-slate-400" data-i18n="lang-de-sub">Sehr gut in Wort und Schrift</p>
+            </div>
+            <div class="glass-card p-6 rounded-2xl text-center space-y-3 border border-white/10">
+              <h4 class="font-semibold">Englisch (C1)</h4>
+              <p class="text-xs text-slate-400" data-i18n="lang-en-sub">Sprachzertifikat Univ. Mannheim</p>
+            </div>
+          </div>
         </div>
-        <div class="glass-card p-6 rounded-2xl text-center space-y-3 border border-white/10">
-          <i data-lucide="cloud" class="w-8 h-8 text-sky-400 mx-auto"></i>
-          <h3 class="font-semibold">Azure & Entra ID</h3>
-          <p class="text-xs text-slate-400">Automatisierung</p>
-        </div>
-        <div class="glass-card p-6 rounded-2xl text-center space-y-3 border border-white/10">
-          <i data-lucide="file-code" class="w-8 h-8 text-emerald-400 mx-auto"></i>
-          <h3 class="font-semibold">HTML, CSS, JS</h3>
-          <p class="text-xs text-slate-400">Frontend Entwicklung</p>
-        </div>
-        <div class="glass-card p-6 rounded-2xl text-center space-y-3 border border-white/10">
-          <i data-lucide="layers" class="w-8 h-8 text-rose-400 mx-auto"></i>
-          <h3 class="font-semibold">XML / XPath / MFL</h3>
-          <p class="text-xs text-slate-400">EDI & Datentransformation</p>
-        </div>
-        <div class="glass-card p-6 rounded-2xl text-center space-y-3 border border-white/10">
-          <i data-lucide="cpu" class="w-8 h-8 text-indigo-300 mx-auto"></i>
-          <h3 class="font-semibold">ServiceNow & Confluence</h3>
-          <p class="text-xs text-slate-400">Enterprise Tools & Dokumentation</p>
-        </div>
-        <div class="glass-card p-6 rounded-2xl text-center space-y-3 border border-white/10">
-          <i data-lucide="globe-2" class="w-8 h-8 text-emerald-400 mx-auto"></i>
-          <h3 class="font-semibold" data-i18n="lang-fr">Französisch</h3>
-          <p class="text-xs text-slate-400" data-i18n="lang-fr-sub">Muttersprache</p>
-        </div>
-        <div class="glass-card p-6 rounded-2xl text-center space-y-3 border border-white/10">
-          <i data-lucide="award" class="w-8 h-8 text-rose-400 mx-auto"></i>
-          <h3 class="font-semibold">Deutsch (DSH-3)</h3>
-          <p class="text-xs text-slate-400" data-i18n="lang-de-sub">Sehr gut in Wort und Schrift</p>
-        </div>
-        <div class="glass-card p-6 rounded-2xl text-center space-y-3 border border-white/10">
-          <i data-lucide="message-square" class="w-8 h-8 text-indigo-300 mx-auto"></i>
-          <h3 class="font-semibold">Englisch (C1)</h3>
-          <p class="text-xs text-slate-400" data-i18n="lang-en-sub">Sprachzertifikat Univ. Mannheim</p>
-        </div>
-        <div class="glass-card p-6 rounded-2xl text-center space-y-3 border border-white/10">
-          <i data-lucide="briefcase" class="w-8 h-8 text-cyan-300 mx-auto"></i>
-          <h3 class="font-semibold">IT-Consulting</h3>
-          <p class="text-xs text-slate-400" data-i18n="skill-consulting">Anforderungsanalyse & Testing</p>
-        </div>
+
       </div>
     </section>
 
@@ -447,6 +472,10 @@
         "edu-lycee": "Quantitative Techniken BWL.",
         "skills-heading": "Kenntnisse & Fähigkeiten", "skills-sub": "Technische Expertise und Sprachen",
         "skill-consulting": "Anforderungsanalyse & Testing",
+        "cat-backend": "Backend, APIs & Datenbanken",
+        "cat-devops": "Cloud, DevOps & Integrationen",
+        "cat-tools": "Enterprise Tools & Consulting",
+        "cat-langs": "Sprachen"
         "lang-fr": "Französisch", "lang-fr-sub": "Muttersprache", "lang-de-sub": "Sehr gut in Wort und Schrift", "lang-en-sub": "Sprachzertifikat Univ. Mannheim",
         "proj-heading": "Projekte", "proj-sub": "Akademische & Persönliche Projekte",
         "proj-iot": "Konzeption und Entwicklung eines FastAPI-Webservice zur Analyse von IoT-Telemetriedaten aus PostgreSQL mit OData-Schnittstelle, SQL-Injection-Schutz und Docker.",
@@ -478,6 +507,10 @@
         "edu-lycee": "Quantitative Techniques in Business Administration.",
         "skills-heading": "Skills & Expertise", "skills-sub": "Technical stack and languages",
         "skill-consulting": "Requirements Analysis & Testing",
+        "cat-backend": "Backend, APIs & Databases",
+        "cat-devops": "Cloud, DevOps & Integrations",
+        "cat-tools": "Enterprise Tools & Consulting",
+        "cat-langs": "Languages"
         "lang-fr": "French", "lang-fr-sub": "Native Language", "lang-de-sub": "Professional Proficiency", "lang-en-sub": "Advanced Business Fluency",
         "proj-heading": "Projects", "proj-sub": "Academic & Personal Projects",
         "proj-iot": "Design and development of a FastAPI web service analyzing IoT telemetry data from PostgreSQL with OData, SQL injection protection, and Docker.",
@@ -509,6 +542,10 @@
         "edu-lycee": "Techniques quantitatives de gestion.",
         "skills-heading": "Compétences & Expertise", "skills-sub": "Stack technique et langues",
         "skill-consulting": "Analyse des besoins & Tests",
+        "cat-backend": "Backend, APIs & Bases de données",
+        "cat-devops": "Cloud, DevOps & Intégrations",
+        "cat-tools": "Outils d'entreprise & Conseil",
+        "cat-langs": "Langues"
         "lang-fr": "Français", "lang-fr-sub": "Langue maternelle", "lang-de-sub": "Maîtrise professionnelle", "lang-en-sub": "Courant professionnel avancé",
         "proj-heading": "Projets", "proj-sub": "Projets académiques et personnels",
         "proj-iot": "Conception et développement d'un service web FastAPI analysant des données télémétriques IoT depuis PostgreSQL avec OData, protection contre les injections SQL et Docker.",
