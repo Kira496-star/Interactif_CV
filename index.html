@@ -415,6 +415,13 @@
 
   <script>
     lucide.createIcons();
+    // Formular beim Laden/Zurückkehren automatisch leeren
+    window.addEventListener('pageshow', (event) => {
+      const form = document.getElementById('contact-form');
+      if (form) {
+        form.reset();
+      }
+    });
 
     const translations = {
       de: {
